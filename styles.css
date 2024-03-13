@@ -1,0 +1,17 @@
+body {
+    background-color: darkcyan;
+    margin: 0;
+    display: flex;
+}
+
+.leftSection {
+    background-color: blue;
+    width: 52%;
+    height: 100vh;
+}
+
+.rightSection {
+    background-color: blueviolet;
+    width: 48%;
+    height: 100vh;
+}
