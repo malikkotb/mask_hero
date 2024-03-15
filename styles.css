@@ -1,0 +1,69 @@
+body {
+  background-color: darkcyan;
+  margin: 0;
+  display: flex;
+}
+
+.leftSection {
+  width: 52%;
+  height: 100vh;
+  border-right: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.leftSection div {
+  text-align: right;
+  width: 75%;
+  font-family: "Roboto Thin", Arial, sans-serif;
+  color: white;
+  font-weight: 100;
+  font-size: 35px;
+}
+
+.leftSection .author {
+  text-align: right;
+  width: 75%;
+  /* font-family: "Roboto Thin", Arial, sans-serif; */
+  color: white;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+span {
+  font-weight: bold;
+}
+
+.rightSection {
+  width: 48%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.rightSection div {
+  text-align: left;
+  width: 75%;
+  font-family: "Roboto Thin", Arial, sans-serif;
+  color: white;
+  font-weight: 100;
+  font-size: 35px;
+}
+
+.rightSection button {
+  font-size: 20px;
+  color: white;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.rightSection button:hover {
+  text-decoration: underline;
+}
