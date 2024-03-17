@@ -43,7 +43,7 @@ span {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 25px;
+  /* gap: 25px; */
   align-items: center;
 }
 
@@ -60,29 +60,46 @@ button {
   background: none;
   border: none;
   outline: none;
-  transition: transform 0.3s ease; /* Add transition for smooth effect */
+  transition: transform 0.4s cubic-bezier(0.47, 1.64, 0.41, .8); /* Add transition for smooth effect */
 }
 
 .rightSection button:hover {
   text-decoration: underline;
 }
 
+.centered-wrapper {
+  height: 250px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 #list {
-  display: none;
   flex-direction: column;
   gap: 15px;
+  height: 300px;
+  display: flex;
+  justify-content: start;
+  text-align: left;
   font-weight: 100;
   font-size: 35px;
-  transform: translateX(-300px);
+  font-family: "Roboto Thin", Arial, sans-serif;
+  color: white;
+  transform: translateX(-350px);
+  transition: transform 0.4s cubic-bezier(0.47, 1.64, 0.41, .8);
 }
 
 .mask {
   overflow: hidden;
-  border: 1px solid red;
-  padding: 15px;
+  position: relative;
+  height: 300px;
+  padding: 20px;
 }
 
-.insanityBtn {
+#insanityBtn {
   font-weight: 100;
-  font-size: 10px;
+  font-size: 18px;
+  color: lightgrey;
 }
