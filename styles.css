@@ -47,23 +47,42 @@ span {
   align-items: center;
 }
 
-.rightSection div {
-  text-align: left;
-  width: 75%;
-  font-family: "Roboto Thin", Arial, sans-serif;
-  color: white;
-  font-weight: 100;
-  font-size: 35px;
+button {
+  padding: 0;
 }
 
 .rightSection button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 20px;
   color: white;
   background: none;
   border: none;
   outline: none;
+  transition: transform 0.3s ease; /* Add transition for smooth effect */
 }
 
 .rightSection button:hover {
   text-decoration: underline;
+}
+
+#list {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  font-weight: 100;
+  font-size: 35px;
+  transform: translateX(-300px);
+}
+
+.mask {
+  overflow: hidden;
+  border: 1px solid red;
+  padding: 15px;
+}
+
+.insanityBtn {
+  font-weight: 100;
+  font-size: 10px;
 }
